@@ -1,6 +1,6 @@
 # Do We Take Shelter?: *Evaluating "high stakes" information*
 
-Link to game: https://chantalmb.github.io/DWTS-game/
+Link to game: https://chantalmb.github.io/do_we_take_shelter-pt2/
 
 ## Folder structure
 - `index.html`: Published game file
