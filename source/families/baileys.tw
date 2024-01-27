@@ -1,0 +1,99 @@
+:: Baileys1
+<<nobr>>
+
+<p class="fade-text">Based on the information you have, answer the following questions:</p>
+
+<<timed 2s t8n>>
+<ul>
+    <li>Will there be another bombardment and, if so, when?</li>
+    <li>Should we move back to the community air raid shelter or stay in our own homes another night?</li>
+</ul>
+
+<<next 2s>>
+<p>Assess the bias that this information might reflect. Identify any additional information you might need and be able to gather such as:</p>
+<ul>
+    <li>What is the Luftwaffe strategy for bombing English cities?</li>
+    <li>How many British people have been injured or died so far during the war?</li>
+    <li>What air raid precautions were in place in Britain during the war?</li>
+</ul>
+
+<<next 2s>>
+<p>What do you do next?</p>
+
+<<next 2s>>
+<p>Use the ACT UP handout to evaluate the information that you have.</p>
+
+<<next 2s>>
+<p>Now, share your evaluation with the other households [[after your kitchen table discussion.|LunchtimeReports]]</p>
+
+<</timed>>
+<</nobr>>
+
+:: Baileys2
+<<nobr>>
+<<audio "bicycle-bell" play>>
+
+<p class="fade-text">''Robert Bailey Junior:'' Make sure everyone [[listens to the secret message from Ernie to Sheila. They now communicate via their homing pigeons Commando 1 and 2 and Princesses 1 and 2.|Pigeons1]]</p>
+
+<<timed 3s t8n>>
+<p>Evaluate the new information that you have to build your understanding of the impact and implications of the most recent bombings.</p>
+
+<<next 2s>>
+<p>You must determine the facts about what has just happened in your city:</p>
+
+<ul>
+    <li>What do we now know?</li>
+        <ul>
+            <li>Where have the bombs fallen?</li>
+            <li>How many people are injured or dead?</li>
+            <li>Are communication and transportation systems disrupted?</li>
+            <li>What are the conditions in the community shelter?</li>
+            <li>Can you buy food (with ration coupons) and other supplies?</li>
+            <li>Where will you go if your home is badly damaged?</li>
+        </ul>
+    <li>Based on this information, what is the threat of another bombing today?</li>
+    <li>Do you need more information? If so, what information do you need?</li>
+</ul>
+
+<<next 2s>>
+<p>What do you do next?</p>
+
+<<next 2s>>
+<p>Use the ACT UP handout to evaluate the additional information you have.  </p>
+
+<<next 2s>>
+<p>[[Share your evaluation with the other households.|Greenep]]</p>
+
+<</timed>>
+<</nobr>>
+
+:: Baileys3
+<<nobr>>
+<<audio "shop-bell" volume 0.55 play>>
+
+<p class="fade-text">''Robert Bailey Junior:'' Make sure everyone listens to [[the secret message from Ernie to Sheila.|Pigeons2]] This is another message shared via their homing pigeon Commando.</p>
+
+<<timed 3s t8n>>
+<p>Evaluate the new information that you have.</p>
+
+<<next 2s>>
+<p>This information includes <a href="https://archive.org/details/camphutchinsonin1211hutc/mode/1up?view=theater" target="_blank">this copy of the December 20, 1940 issue of The Camp</a>, the official journal of internees at The Hutchison Camp which is an internment camp on the Isle of Wight.</p>
+
+<<next 2s>>
+Open this document: Evaluate the information on page 1 and the article //Science marches// on on page 3.
+
+<<next 2s>>
+<p>Use the ACT UP handout to evaluate the facts that you have gathered alongside any anecdotes, rumours, and propaganda that you now know.</p> 
+
+<<next 2s>>
+<p>In addition to the questions on the ACT UP handout, consider:</p>
+<ul>
+    <li>Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?</li>
+    <li>Is there any information that you think you need to discard? Why?</li>
+</ul>
+
+<<next 3s>>
+<p>Now go and [[share this evaluation with the other households.|FinalDecisions]]</p>
+
+<</timed>>
+<</nobr>>
