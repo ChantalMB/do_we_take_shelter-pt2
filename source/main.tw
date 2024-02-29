@@ -124,7 +124,7 @@ Do we take shelter?
 <</nobr>>
 
 :: SelectHousehold3
-<h1 class="fade-text" style="text-align:center;">Round 1</h1>
+<h1 class="fade-text" style="text-align:center;">Round 3</h1>
 Select your household.
 
 [[Gamemaster's Clock|Gamemaster3]]
@@ -139,21 +139,18 @@ Select your household.
 
 :: FinalDecisions
 <<nobr>>
-<p class="fade-text">The households and community members have gathered all the information it can about last night’s air raid.</p>
+<p class="fade-text">Each household has gathered (and mapped) all the information it can gather about last night’s air raid.</p>
 
 <<timed 3s t8n>>
-<p>Now it is time to do a final evaluation and decide on the household plan in the event of another air raid this evening: does everyone stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms at 111 Cheetham Hill Rd.</p>
-
-<<next 2s>>
-<p>What do you do next?</p>
+<p>Now it is time to do a final evaluation and decide on the household plan in the event of another air raid this evening: does everyone stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?</p>
 
 <<next 3s>>
 <img class="divider" src="./assets/images/div-05.svg"/>
 
-<p>All households, look at your ACT UP handouts:</p>
+<p>Look at your Warden’s Report Form/War Report Form:</p>
 <ul>
-    <li>Which information do you believe is real and which is fake?</li>
-    <li>Which information is the most biased and which the least?</li>
+    <li>Which information do you believe is authoritative and current?</li>
+    <li>Which information is the most biased and which is the least?</li>
     <li>Which information should you all use to make your final decision?</li>
 </ul>
 

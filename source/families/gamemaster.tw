@@ -21,10 +21,10 @@
 	<</repeat>>
 <</silently>>
 
-<<timed 1500s>>
+/* <<timed 1500s>>
     <<audio "westminster" play>>
     <p class="fade-text" style="display:flex;justify-content:center;font-size:1.5em;">[[Proceed|LunchtimeReports]]</p>
-<</timed>>
+<</timed>> */
 <</nobr>>
 
 :: Gamemaster2
@@ -50,10 +50,10 @@
 	<</repeat>>
 <</silently>>
 
-<<timed 1200s>>
+/* <<timed 1200s>>
     <<audio "westminster" play>>
     <p class="fade-text" style="display:flex;justify-content:center;font-size:1.5em;">[[Proceed|Greenep]]</p>
-<</timed>>
+<</timed>> */
 <</nobr>>
 
 :: Gamemaster3
@@ -79,8 +79,8 @@
 	<</repeat>>
 <</silently>>
 
-<<timed 1500s>>
+/* <<timed 1500s>>
     <<audio "westminster" play>>
     <p class="fade-text" style="display:flex;justify-content:center;font-size:1.5em;">[[Proceed|FinalDecisions]]</p>
-<</timed>>
+<</timed>> */
 <</nobr>>
