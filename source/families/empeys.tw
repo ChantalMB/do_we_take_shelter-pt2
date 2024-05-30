@@ -4,9 +4,9 @@
 
 <p class="fade-text">Rita Maloney: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.</p>
 
-<p class="fade-text">Thomas, Hilda, Rita, Elaine, and Emma: together, you need to use the criteria of authority, currency, and bias to evaluate the  facts and information that you have gathered along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: </p>
+<p class="fade-text">Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: </p>
 
-<<timed 3s t8n>>
+<timed 3s t8n>>
 <ul>
     <li>Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?</li>
     <li>Is there any information that you think you need to discard? Why?</li>
@@ -14,10 +14,19 @@
 </ul>
 
 <<next 2s>>
-<p>Use the Warden’s Report Form/War Report Form to record your findings. Be ready to analyze and discuss and share with the other households what you know (and don’t know).</p>
+<p>Look at your Warden’s Report Form/War Report Form:</p>
+
+<ul>
+    <li>Which information do you believe is authoritative and current? </li>
+    <li>Which information is the ost biased and which is the least?</li>
+    <li>Which information should you use to make your final decision?</li>
+</ul>
+
+<p>Once you have done your final evaluation, make your final decision.</p>
 
 <<next 3s>>
-<p>Now go and [[share this evaluation with the other households.|FinalDecisions]]</p>
+<p>The game master will signal the end of Round 3. Now go and [[share this evaluation with the other households.|FinalDecisions]]</p>
+
 
 <</timed>>
 <</nobr>>
