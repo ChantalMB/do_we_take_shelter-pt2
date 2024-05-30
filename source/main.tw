@@ -139,7 +139,8 @@ Select your household.
 
 :: FinalDecisions
 <<nobr>>
-<p class="fade-text">Round 4: Each household has gathered (and mapped) all the information it can gather about last night’s air raid.</p>
+<h1 class="fade-text">Round 4</h1>
+<p class="fade-text">Each household has gathered (and mapped) all the information it can gather about last night’s air raid.</p>
 
 <<timed 3s t8n>>
 <p>Now it is time to do a final evaluation and decide on the household plan in the event of another air raid this evening: does everyone stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?</p>

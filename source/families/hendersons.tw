@@ -7,7 +7,7 @@
 
 <p class="fade-text">Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: </p>
 
-<timed 3s t8n>>
+<<timed 3s t8n>>
 <ul>
     <li>Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?</li>
     <li>Is there any information that you think you need to discard? Why?</li>
