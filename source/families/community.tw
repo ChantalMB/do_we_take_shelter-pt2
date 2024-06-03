@@ -32,26 +32,6 @@
 <p>Use the ACT UP handout to evaluate the information that you have.</p>
 
 <<next 2s>>
-<<set _seconds to 1500>>
-<span id="countdown"><b>Countdown</b>&nbsp;15:00 remaining!</span>
-<<silently>>
-	<<repeat 1s>>
-		<<set _seconds to _seconds - 1>>
-		<<if _seconds gt 0>>
-            <<set _min to Math.trunc(_seconds / 60) >>
-            <<set _sec to Math.trunc(_seconds % 60) >>
-            <<if String(_sec).length lt 2>>
-                <<set _sec to "0" + String(_sec) >>
-            <</if>>
-			<<replace "#countdown">><b>Countdown</b>&nbsp;_min:_sec remaining!<</replace>>
-		<<else>>
-			<<replace "#countdown">>Times up!<</replace>>
-			<<stop>>
-		<</if>>
-	<</repeat>>
-<</silently>>
-
-<<next 1501s>>
 <p>Now, share your evaluation with the other households [[after your kitchen table discussion.|LunchtimeReports]]</p>
 
 <</timed>>
