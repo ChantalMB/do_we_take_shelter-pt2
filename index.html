@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://7BB31A4A-9E10-48D9-A1CD-448A7E567A59// --><tw-storydata name="Do we take shelter?" startnode="12" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7BB31A4A-9E10-48D9-A1CD-448A7E567A59" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
+	<!-- UUID://7BB31A4A-9E10-48D9-A1CD-448A7E567A59// --><tw-storydata name="Do we take shelter?" startnode="10" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7BB31A4A-9E10-48D9-A1CD-448A7E567A59" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
 
 html,
 body {
@@ -4420,75 +4420,7 @@ a:hover {
 &lt;p&gt;Now go and [[share this evaluation with the other households.|FinalDecisions]]&lt;/p&gt;
 
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Community1" tags="" position="225,100" size="100,100">&lt;&lt;nobr&gt;&gt;
-
-&lt;p class=&quot;fade-text&quot;&gt;&#39;&#39;Dr. Garfield Williams:&#39;&#39; You are the moderator for your household and will guide the household in its initial discussion of the information you have about the war with Germany.&lt;/p&gt;
-
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;p&gt;Answer the following questions:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Will there be another bombardment and, if so, when?&lt;/li&gt;
-    &lt;li&gt;Should we move back to the community air raid shelter or stay in our own homes another night?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;To answer these questions, evaluate the information you currently have about the war and determine if it is:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Current (which includes relevancy)&lt;/li&gt;
-    &lt;li&gt;Authoritative&lt;/li&gt;
-    &lt;li&gt;Truthful (which includes accuracy)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Also, assess the bias that this information might reflect. Identify any additional information you might need and be able to gather such as:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;What is the Luftwaffe strategy for bombing English cities?&lt;/li&gt;
-    &lt;li&gt;How many British people have been injured or died so far during the war?&lt;/li&gt;
-    &lt;li&gt;What air raid precautions were in place in Britain during the war?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;What do you do next?&lt;/p&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Use the ACT UP handout to evaluate the information that you have.&lt;/p&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;&lt;set _seconds to 1500&gt;&gt;
-&lt;span id=&quot;countdown&quot;&gt;&lt;b&gt;Countdown&lt;/b&gt;&amp;nbsp;15:00 remaining!&lt;/span&gt;
-&lt;&lt;silently&gt;&gt;
-	&lt;&lt;repeat 1s&gt;&gt;
-		&lt;&lt;set _seconds to _seconds - 1&gt;&gt;
-		&lt;&lt;if _seconds gt 0&gt;&gt;
-            &lt;&lt;set _min to Math.trunc(_seconds / 60) &gt;&gt;
-            &lt;&lt;set _sec to Math.trunc(_seconds % 60) &gt;&gt;
-            &lt;&lt;if String(_sec).length lt 2&gt;&gt;
-                &lt;&lt;set _sec to &quot;0&quot; + String(_sec) &gt;&gt;
-            &lt;&lt;/if&gt;&gt;
-			&lt;&lt;replace &quot;#countdown&quot;&gt;&gt;&lt;b&gt;Countdown&lt;/b&gt;&amp;nbsp;_min:_sec remaining!&lt;&lt;/replace&gt;&gt;
-		&lt;&lt;else&gt;&gt;
-			&lt;&lt;replace &quot;#countdown&quot;&gt;&gt;Times up!&lt;&lt;/replace&gt;&gt;
-			&lt;&lt;stop&gt;&gt;
-		&lt;&lt;/if&gt;&gt;
-	&lt;&lt;/repeat&gt;&gt;
-&lt;&lt;/silently&gt;&gt;
-
-&lt;&lt;next 1501s&gt;&gt;
-&lt;p&gt;Now, share your evaluation with the other households [[after your kitchen table discussion.|LunchtimeReports]]&lt;/p&gt;
-
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Community2" tags="" position="350,100" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;p class=&quot;fade-text&quot;&gt;In this round, you visit the following households and share the information that you have about the bombings:&lt;/p&gt;
-
-&lt;&lt;timed 2s t8n&gt;&gt;
-&lt;ul&gt;
-    &lt;li&gt;&#39;&#39;Dr. Garfield Williams:&#39;&#39; The Hendersons&lt;/li&gt;
-    &lt;li&gt;&#39;&#39;Mr. Leonard Johnson:&#39;&#39; The Empeys&lt;/li&gt;
-    &lt;li&gt;&#39;&#39;Mr. Khan:&#39;&#39; The Engels&lt;/li&gt;
-    &lt;li&gt;&#39;&#39;Mrs. Khan:&#39;&#39; The Sklars&lt;/li&gt;
-&lt;/ul&gt;
-&lt;&lt;/timed&gt;&gt;
-
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Community3" tags="" position="475,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Community3" tags="" position="225,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;p class=&quot;fade-text&quot;&gt;In this round, you visit the following households and share the information that you have about the bombings:&lt;/p&gt;
 
 &lt;&lt;timed 2s t8n&gt;&gt;
@@ -4498,9 +4430,12 @@ a:hover {
     &lt;li&gt;&#39;&#39;Mr. Khan:&#39;&#39; The Hendersons&lt;/li&gt;
     &lt;li&gt;&#39;&#39;Mrs. Khan:&#39;&#39; The Empeys&lt;/li&gt;
 &lt;/ul&gt;
+&lt;&lt;next 2s&gt;&gt;
+&lt;p&gt;Now you will return to the main Round 2 page to [[choose your assigned household.|SelectHousehold3]]&lt;/p&gt;
+
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Empeys3" tags="" position="600,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Empeys3" tags="" position="350,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
 
 &lt;p class=&quot;fade-text&quot;&gt;Rita Maloney: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
@@ -4530,7 +4465,7 @@ a:hover {
 
 
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Engels3" tags="" position="725,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Engels3" tags="" position="475,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
 
 &lt;p class=&quot;fade-text&quot;&gt;Richard Jones: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
@@ -4560,7 +4495,7 @@ a:hover {
 
 
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Gamemaster1" tags="" position="850,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Gamemaster1" tags="" position="600,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set _seconds to 1500&gt;&gt;
 &lt;div id=&quot;countdown&quot;&gt;
     &lt;h1 style=&quot;font-size:15em;margin:0px;&quot;&gt;25:00&lt;/h1&gt;
@@ -4586,7 +4521,7 @@ a:hover {
     &lt;&lt;audio &quot;westminster&quot; play&gt;&gt;
     &lt;p class=&quot;fade-text&quot; style=&quot;display:flex;justify-content:center;font-size:1.5em;&quot;&gt;[[Proceed|LunchtimeReports]]&lt;/p&gt;
 &lt;&lt;/timed&gt;&gt; */
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Gamemaster2" tags="" position="975,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Gamemaster2" tags="" position="725,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set _seconds to 1200&gt;&gt;
 &lt;div id=&quot;countdown&quot;&gt;
     &lt;h1 style=&quot;font-size:15em;margin:0px;&quot;&gt;20:00&lt;/h1&gt;
@@ -4612,7 +4547,7 @@ a:hover {
     &lt;&lt;audio &quot;westminster&quot; play&gt;&gt;
     &lt;p class=&quot;fade-text&quot; style=&quot;display:flex;justify-content:center;font-size:1.5em;&quot;&gt;[[Proceed|Greenep]]&lt;/p&gt;
 &lt;&lt;/timed&gt;&gt; */
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="Gamemaster3" tags="" position="1100,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Gamemaster3" tags="" position="850,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set _seconds to 1500&gt;&gt;
 &lt;div id=&quot;countdown&quot;&gt;
     &lt;h1 style=&quot;font-size:15em;margin:0px;&quot;&gt;25:00&lt;/h1&gt;
@@ -4638,7 +4573,7 @@ a:hover {
     &lt;&lt;audio &quot;westminster&quot; play&gt;&gt;
     &lt;p class=&quot;fade-text&quot; style=&quot;display:flex;justify-content:center;font-size:1.5em;&quot;&gt;[[Proceed|FinalDecisions]]&lt;/p&gt;
 &lt;&lt;/timed&gt;&gt; */
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Hendersons3" tags="" position="1225,100" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Hendersons3" tags="" position="975,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
 
 &lt;p class=&quot;fade-text&quot;&gt;Gertrude Henderson: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
@@ -4668,7 +4603,7 @@ a:hover {
 
 
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="StoryInit" tags="" position="100,225" size="100,100">&lt;&lt;cacheaudio &quot;game-theme&quot; &quot;./assets/audio/game-theme.mp3&quot;&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="1100,100" size="100,100">&lt;&lt;cacheaudio &quot;game-theme&quot; &quot;./assets/audio/game-theme.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;opening-message&quot; &quot;./assets/audio/opening-message.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;second-message&quot; &quot;./assets/audio/second-message.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;pigeon12&quot; &quot;./assets/audio/pigeon12.mp3&quot;&gt;&gt;
@@ -4681,7 +4616,7 @@ a:hover {
 &lt;&lt;cacheaudio &quot;motor-car&quot; &quot;./assets/audio/motor-car.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;streetcar-station&quot; &quot;./assets/audio/streetcar-station.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;pigeon-coo&quot; &quot;./assets/audio/pigeon-coo.mp3&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;westminster&quot; &quot;./assets/audio/westminster.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Start" tags="" position="225,225" size="100,100">&lt;div class=&quot;game-title&quot; style=&quot;margin-bottom: 55px;&quot;&gt;
+&lt;&lt;cacheaudio &quot;westminster&quot; &quot;./assets/audio/westminster.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Start" tags="" position="1225,100" size="100,100">&lt;div class=&quot;game-title&quot; style=&quot;margin-bottom: 55px;&quot;&gt;
 !Do we take shelter? 
 !!//Evaluating “high stakes” information//
 &lt;/div&gt;
@@ -4696,7 +4631,7 @@ a:hover {
 
 &lt;div class=&quot;fade-text opening-link hidden-link&quot;&gt;
 [[Proceed to Greenep&#39;s Tobacco and Sweet Shop|Greenep]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Greenep" tags="" position="350,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Greenep" tags="" position="100,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;type 90ms&gt;&gt;\
 &lt;span class=&quot;typewriter&quot;&gt;3:00 p.m, Greenep&#39;s Tobacco and Sweet Shop.&lt;/span&gt;
 \&lt;&lt;/type&gt;&gt;
@@ -4770,7 +4705,7 @@ a:hover {
 
 &lt;&lt;/timed&gt;&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="SelectHousehold3" tags="" position="475,225" size="100,100">&lt;h1 class=&quot;fade-text&quot; style=&quot;text-align:center;&quot;&gt;Round 3&lt;/h1&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="SelectHousehold3" tags="" position="225,225" size="100,100">&lt;h1 class=&quot;fade-text&quot; style=&quot;text-align:center;&quot;&gt;Round 3&lt;/h1&gt;
 Select your household.
 
 [[Gamemaster&#39;s Clock|Gamemaster3]]
@@ -4781,7 +4716,7 @@ Select your household.
 [[Household 4: The Sklars|Sklars3]]
 [[Household 5: The Baileys|Baileys3]]
 
-[[Community Members|Community3]]</tw-passagedata><tw-passagedata pid="15" name="FinalDecisions" tags="" position="600,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+[[Community Members|Community3]]</tw-passagedata><tw-passagedata pid="13" name="FinalDecisions" tags="" position="350,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;h1 class=&quot;fade-text&quot;&gt;Round 4&lt;/h1&gt;
 &lt;p class=&quot;fade-text&quot;&gt;Each household has gathered (and mapped) all the information it can gather about last night’s air raid.&lt;/p&gt;
 
@@ -4801,7 +4736,7 @@ Select your household.
 &lt;&lt;next 2s&gt;&gt;
 &lt;p&gt;Once you’ve done your final household evaluation, make your final decision. Be prepared to [[share your decision with the other households.|FinalCredits]]&lt;/p&gt;
 &lt;&lt;/timed&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="FinalCredits" tags="" position="725,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="FinalCredits" tags="" position="475,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;game-theme&quot; volume 0 fadeoverto 7 0.75&gt;&gt;
 
 &lt;div class=&quot;fade-text&quot;&gt;
@@ -4816,7 +4751,7 @@ Select your household.
     &lt;p&gt;Voice work by Sean Bufton and Linnet Whiston.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Pigeons1" tags="" position="850,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Pigeons1" tags="" position="600,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;pigeon-coo&quot; volume 0.75 fadeoverto 7 0&gt;&gt;
 
 &lt;p&gt;[[&lt; Return to main passage|Baileys2]]&lt;/p&gt;
@@ -4829,7 +4764,7 @@ Select your household.
     &lt;img class=&quot;pigeon-base&quot; src=&quot;./assets/images/pigeon-base.png&quot;&gt;
 &lt;/div&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Pigeons2" tags="" position="975,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Pigeons2" tags="" position="725,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;pigeon-coo&quot; volume 0.75 fadeoverto 7 0&gt;&gt;
 
 &lt;p&gt;[[&lt; Return to main passage|Baileys3]]&lt;/p&gt;
@@ -4842,7 +4777,7 @@ Select your household.
     &lt;img class=&quot;pigeon-base&quot; src=&quot;./assets/images/pigeon-base.png&quot;&gt;
 &lt;/div&gt;
 
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Sklars3" tags="" position="1100,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Sklars3" tags="" position="850,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
 
 &lt;p class=&quot;fade-text&quot;&gt;Reeta Sklar: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information you have now.&lt;/p&gt;
