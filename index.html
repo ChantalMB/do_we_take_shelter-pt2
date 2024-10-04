@@ -99,6 +99,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<!-- UUID://7BB31A4A-9E10-48D9-A1CD-448A7E567A59// --><tw-storydata name="Do we take shelter?" startnode="10" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="7BB31A4A-9E10-48D9-A1CD-448A7E567A59" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Courier+Prime');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 html,
 body {
@@ -221,6 +222,16 @@ a:hover {
   z-index: 1;
 }
 
+@keyframes glow-svg {
+  from {
+    filter: drop-shadow(0px 0px 10px greenyellow);
+  }
+  to {
+    filter: drop-shadow(0px 0px 1px greenyellow);
+  }
+}
+
+
 @keyframes glow-image {
   from {
     box-shadow: 0 0 30px 15px greenyellow;
@@ -287,6 +298,12 @@ a:hover {
   html {
     font-size: 1vw;
   }
+}
+
+.household-page {
+  position: fixed;
+  bottom: 35px;
+  right: 3vw;
 }
 
 /* teacup animation */
@@ -719,10 +736,10 @@ a:hover {
 /* fire particle/glow effect */
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff;
+    text-shadow: 0 0 10px greenyellow;
   }
   to {
-    text-shadow: 0 0 15px #fff;
+    text-shadow: 0 0 17px greenyellow;
   }
 }
 
@@ -4398,7 +4415,66 @@ a:hover {
     opacity: 1;
   }
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.ui.stowBarInitially = true;
+
+.tower-backlight {
+  animation: glow-svg 1s ease-in-out infinite alternate;
+}
+
+.notepad-container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px 50px 30px;
+}
+
+.notepad {
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 10px 10px 40px rgba(black, .15);
+  border-radius: 0 0 10px 10px;
+  overflow-x: hidden;
+}
+
+.top {
+  width: 100%;
+  height: 50px;
+  background: #561e0b;
+  border-radius: 5px 5px 0 0;
+}
+
+.paper-container {
+  height: 100%;
+  max-height: 77vh;
+  overflow: scroll;
+}
+
+.paper {
+  height: 100%;
+  padding: 35px 20px;
+  background: repeating-linear-gradient(#f6eee3, #f6eee3 31px, #94ACD4 31px, #94ACD4 32px);
+  font-family: "Rock Salt", cursive;
+  line-height: 32px;
+  outline: 0;
+  font-size: 22px;
+  color: darkblue;
+}
+
+.megaphone-backlight {
+  height: 100%;
+  padding-top: 15px;
+  padding-right: 15px;
+  animation: glow-svg 1s ease-in-out infinite alternate;
+}
+
+.paper-end a {
+  font-size: 35px;
+  color: darkblue;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.ui.stowBarInitially = true;
 </script><tw-passagedata pid="1" name="Baileys3" tags="" position="100,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
 
@@ -4437,64 +4513,90 @@ a:hover {
 
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Empeys3" tags="" position="350,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
+&lt;p id=&quot;panel1&quot; class=&quot;fade-text&quot; style=&quot;font-size:1.5em;text-align:center;padding-top:75px;padding-bottom:45px;&quot;&gt;&lt;b&gt;Moderators, household and community members:&lt;/b&gt; read your instructions in the gamer handbook carefully. Listen to more reporting from Radio MAB. Your scones are getting cold.&lt;/p&gt;
 
-&lt;p class=&quot;fade-text&quot;&gt;Rita Maloney: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
-
-&lt;p class=&quot;fade-text&quot;&gt;Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: &lt;/p&gt;
-
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;ul&gt;
-    &lt;li&gt;Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?&lt;/li&gt;
-    &lt;li&gt;Is there any information that you think you need to discard? Why?&lt;/li&gt;
-    &lt;li&gt;How can you use the interactive map to visualize this information to better see and understand what is happening?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Look at your Warden’s Report Form/War Report Form:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Which information do you believe is authoritative and current? &lt;/li&gt;
-    &lt;li&gt;Which information is the ost biased and which is the least?&lt;/li&gt;
-    &lt;li&gt;Which information should you use to make your final decision?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you have done your final evaluation, make your final decision.&lt;/p&gt;
-
-&lt;&lt;next 3s&gt;&gt;
-&lt;p&gt;The game master will signal the end of Round 3. Now go and [[share this evaluation with the other households.|FinalDecisions]]&lt;/p&gt;
-
-
-&lt;&lt;/timed&gt;&gt;
+&lt;div id=&quot;link1&quot; style=&quot;display:flex;height:100vh;justify-content:center;align-self:flex-end;&quot; onclick=&quot;$(&#39;#panel1&#39;).toggle(); $(&#39;#link1&#39;).toggle(); $(&#39;#panel2&#39;).toggle();&quot;&gt;
+    &lt;img class=&quot;tower-backlight&quot; src=&quot;./assets/images/manchester-radio-tower.svg&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fade-text&quot; id=&quot;panel2&quot; style=&quot;display: none;&quot;&gt;
+    &lt;div class=&quot;fade-text notepad-container&quot;&gt;
+        &lt;div class=&quot;notepad&quot;&gt;
+            &lt;div class=&quot;top&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;justify-content:end;height:100%;&quot;&gt;
+                    &lt;img class=&quot;megaphone-backlight&quot; src=&quot;./assets/images/megaphone.svg&quot; onclick=&quot;document.getElementById(&#39;recording4&#39;).play();&quot;/&gt;
+                    &lt;audio id=&quot;recording4&quot; src=&quot;./assets/audio/r3p4.mp3&quot;&gt;&lt;/audio&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;paper-container&quot;&gt;
+                &lt;div class=&quot;paper&quot;&gt;
+                    This is Radio MAB, bringing you the latest &quot;Do we take shelter?&quot; bulletin.&lt;br&gt;
+                    &lt;br&gt;
+                    You have 20 minutes left to assess and decide where you will stay tonight.&lt;br&gt;
+                    &lt;br&gt;
+                    You must continue to answer these questions:&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Will there be another bombardment and, if so, when?&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Should you move back to the community shelter or stay in your own home another night?&lt;br&gt;
+                    &lt;br&gt;
+                    Information is still scarce but you are about to receive further news.&lt;br&gt;
+                    &lt;br&gt;
+                    Now household and community members pass on the neighbourhood scoops they heard at Greenep’s Tobacco and Sweet Shop.&lt;br&gt;
+                    Sometimes, folks share first-hand accounts, sometimes second-or third-hand accounts. &lt;br&gt;
+                    &lt;br&gt;
+                    But what is true and what is just gossip or rumour?&lt;br&gt;
+                    &lt;br&gt;
+                    The game master will signal the end of Round 3 and then you will share your evaluation with the other households.&lt;br&gt;
+                    &lt;br&gt;
+                    Drink you tea, be vigilante&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;p class=&quot;paper-end&quot; style=&quot;text-align:center;&quot;&gt;[[Filter out the rumours from the truth.|FinalDecisions]]&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Engels3" tags="" position="475,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
+&lt;p id=&quot;panel1&quot; class=&quot;fade-text&quot; style=&quot;font-size:1.5em;text-align:center;padding-top:75px;padding-bottom:45px;&quot;&gt;&lt;b&gt;Moderators, household and community members:&lt;/b&gt; read your instructions in the gamer handbook carefully. Listen to more reporting from Radio MAB. Your scones are getting cold.&lt;/p&gt;
 
-&lt;p class=&quot;fade-text&quot;&gt;Richard Jones: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
-
-&lt;p class=&quot;fade-text&quot;&gt;Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: &lt;/p&gt;
-
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;ul&gt;
-    &lt;li&gt;Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?&lt;/li&gt;
-    &lt;li&gt;Is there any information that you think you need to discard? Why?&lt;/li&gt;
-    &lt;li&gt;How can you use the interactive map to visualize this information to better see and understand what is happening?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Look at your Warden’s Report Form/War Report Form:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Which information do you believe is authoritative and current? &lt;/li&gt;
-    &lt;li&gt;Which information is the ost biased and which is the least?&lt;/li&gt;
-    &lt;li&gt;Which information should you use to make your final decision?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you have done your final evaluation, make your final decision.&lt;/p&gt;
-
-&lt;&lt;next 3s&gt;&gt;
-&lt;p&gt;The game master will signal the end of Round 3. Now go and [[share this evaluation with the other households.|FinalDecisions]]&lt;/p&gt;
-
-
-&lt;&lt;/timed&gt;&gt;
+&lt;div id=&quot;link1&quot; style=&quot;display:flex;height:100vh;justify-content:center;align-self:flex-end;&quot; onclick=&quot;$(&#39;#panel1&#39;).toggle(); $(&#39;#link1&#39;).toggle(); $(&#39;#panel2&#39;).toggle();&quot;&gt;
+    &lt;img class=&quot;tower-backlight&quot; src=&quot;./assets/images/manchester-radio-tower.svg&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fade-text&quot; id=&quot;panel2&quot; style=&quot;display: none;&quot;&gt;
+    &lt;div class=&quot;fade-text notepad-container&quot;&gt;
+        &lt;div class=&quot;notepad&quot;&gt;
+            &lt;div class=&quot;top&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;justify-content:end;height:100%;&quot;&gt;
+                    &lt;img class=&quot;megaphone-backlight&quot; src=&quot;./assets/images/megaphone.svg&quot; onclick=&quot;document.getElementById(&#39;recording4&#39;).play();&quot;/&gt;
+                    &lt;audio id=&quot;recording4&quot; src=&quot;./assets/audio/r3p4.mp3&quot;&gt;&lt;/audio&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;paper-container&quot;&gt;
+                &lt;div class=&quot;paper&quot;&gt;
+                    This is Radio MAB, bringing you the latest &quot;Do we take shelter?&quot; bulletin.&lt;br&gt;
+                    &lt;br&gt;
+                    You have 20 minutes left to assess and decide where you will stay tonight.&lt;br&gt;
+                    &lt;br&gt;
+                    You must continue to answer these questions:&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Will there be another bombardment and, if so, when?&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Should you move back to the community shelter or stay in your own home another night?&lt;br&gt;
+                    &lt;br&gt;
+                    Information is still scarce but you are about to receive further news.&lt;br&gt;
+                    &lt;br&gt;
+                    Now household and community members pass on the neighbourhood scoops they heard at Greenep’s Tobacco and Sweet Shop.&lt;br&gt;
+                    Sometimes, folks share first-hand accounts, sometimes second-or third-hand accounts. &lt;br&gt;
+                    &lt;br&gt;
+                    But what is true and what is just gossip or rumour?&lt;br&gt;
+                    &lt;br&gt;
+                    The game master will signal the end of Round 3 and then you will share your evaluation with the other households.&lt;br&gt;
+                    &lt;br&gt;
+                    Drink you tea, be vigilante&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;p class=&quot;paper-end&quot; style=&quot;text-align:center;&quot;&gt;[[Filter out the rumours from the truth.|FinalDecisions]]&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Gamemaster1" tags="" position="600,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set _seconds to 1500&gt;&gt;
 &lt;div id=&quot;countdown&quot;&gt;
@@ -4575,34 +4677,47 @@ a:hover {
 &lt;&lt;/timed&gt;&gt; */
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Hendersons3" tags="" position="975,100" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
+&lt;p id=&quot;panel1&quot; class=&quot;fade-text&quot; style=&quot;font-size:1.5em;text-align:center;padding-top:75px;padding-bottom:45px;&quot;&gt;&lt;b&gt;Moderators, household and community members:&lt;/b&gt; read your instructions in the gamer handbook carefully. Listen to more reporting from Radio MAB. Your scones are getting cold.&lt;/p&gt;
 
-&lt;p class=&quot;fade-text&quot;&gt;Gertrude Henderson: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information now have.&lt;/p&gt;
-
-&lt;p class=&quot;fade-text&quot;&gt;Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: &lt;/p&gt;
-
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;ul&gt;
-    &lt;li&gt;Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?&lt;/li&gt;
-    &lt;li&gt;Is there any information that you think you need to discard? Why?&lt;/li&gt;
-    &lt;li&gt;How can you use the interactive map to visualize this information to better see and understand what is happening?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Look at your Warden’s Report Form/War Report Form:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Which information do you believe is authoritative and current? &lt;/li&gt;
-    &lt;li&gt;Which information is the ost biased and which is the least?&lt;/li&gt;
-    &lt;li&gt;Which information should you use to make your final decision?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you have done your final evaluation, make your final decision.&lt;/p&gt;
-
-&lt;&lt;next 3s&gt;&gt;
-&lt;p&gt;The game master will signal the end of Round 3. Now go and [[share this evaluation with the other households.|FinalDecisions]]&lt;/p&gt;
-
-
-&lt;&lt;/timed&gt;&gt;
+&lt;div id=&quot;link1&quot; style=&quot;display:flex;height:100vh;justify-content:center;align-self:flex-end;&quot; onclick=&quot;$(&#39;#panel1&#39;).toggle(); $(&#39;#link1&#39;).toggle(); $(&#39;#panel2&#39;).toggle();&quot;&gt;
+    &lt;img class=&quot;tower-backlight&quot; src=&quot;./assets/images/manchester-radio-tower.svg&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fade-text&quot; id=&quot;panel2&quot; style=&quot;display: none;&quot;&gt;
+    &lt;div class=&quot;fade-text notepad-container&quot;&gt;
+        &lt;div class=&quot;notepad&quot;&gt;
+            &lt;div class=&quot;top&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;justify-content:end;height:100%;&quot;&gt;
+                    &lt;img class=&quot;megaphone-backlight&quot; src=&quot;./assets/images/megaphone.svg&quot; onclick=&quot;document.getElementById(&#39;recording4&#39;).play();&quot;/&gt;
+                    &lt;audio id=&quot;recording4&quot; src=&quot;./assets/audio/r3p4.mp3&quot;&gt;&lt;/audio&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;paper-container&quot;&gt;
+                &lt;div class=&quot;paper&quot;&gt;
+                    This is Radio MAB, bringing you the latest &quot;Do we take shelter?&quot; bulletin.&lt;br&gt;
+                    &lt;br&gt;
+                    You have 20 minutes left to assess and decide where you will stay tonight.&lt;br&gt;
+                    &lt;br&gt;
+                    You must continue to answer these questions:&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Will there be another bombardment and, if so, when?&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Should you move back to the community shelter or stay in your own home another night?&lt;br&gt;
+                    &lt;br&gt;
+                    Information is still scarce but you are about to receive further news.&lt;br&gt;
+                    &lt;br&gt;
+                    Now household and community members pass on the neighbourhood scoops they heard at Greenep’s Tobacco and Sweet Shop.&lt;br&gt;
+                    Sometimes, folks share first-hand accounts, sometimes second-or third-hand accounts. &lt;br&gt;
+                    &lt;br&gt;
+                    But what is true and what is just gossip or rumour?&lt;br&gt;
+                    &lt;br&gt;
+                    The game master will signal the end of Round 3 and then you will share your evaluation with the other households.&lt;br&gt;
+                    &lt;br&gt;
+                    Drink you tea, be vigilante&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;p class=&quot;paper-end&quot; style=&quot;text-align:center;&quot;&gt;[[Filter out the rumours from the truth.|FinalDecisions]]&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="1100,100" size="100,100">&lt;&lt;cacheaudio &quot;game-theme&quot; &quot;./assets/audio/game-theme.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;opening-message&quot; &quot;./assets/audio/opening-message.mp3&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;second-message&quot; &quot;./assets/audio/second-message.mp3&quot;&gt;&gt;
@@ -4630,7 +4745,7 @@ a:hover {
 &lt;/div&gt;
 
 &lt;div class=&quot;fade-text opening-link hidden-link&quot;&gt;
-[[Proceed to Greenep&#39;s Tobacco and Sweet Shop|Greenep]]
+[[Proceed to Manchester England, afternoon of December 23, 1940|Greenep]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Greenep" tags="" position="100,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;type 90ms&gt;&gt;\
 &lt;span class=&quot;typewriter&quot;&gt;3:00 p.m, Greenep&#39;s Tobacco and Sweet Shop.&lt;/span&gt;
@@ -4694,9 +4809,14 @@ a:hover {
 &lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 5s t8n&gt;&gt;
-&lt;p&gt;Sunset will be at 3:50 p.m. today and, as per Civil Defence regulations, everyone must comply with the regulations to mask their windows, skylights, and entrances to comply with blackout regulations 30 minutes before sunset: 3:20 p.m.&lt;/p&gt;
+&lt;p&gt;Sunset will be at 3:50 p.m. today and, as per Civil Defence regulations, you must comply with the blackout regulations and mask your windows, skylights, and entrances 30 minutes before the sun goes down.&lt;/p&gt;
 
-&lt;p&gt;Right after lunch, some household members went to the local shop, Greenep’s Tobacco and Sweet Shop, to buy what they need (basic supplies such as milk and tobacco) in case there is another raid tonight.  Plus, they want to confirm the information that they have and to gather any final information from their neighbours as well as air raid wardens or first aid workers who might also stop by.&lt;/p&gt;
+&lt;&lt;next 2s&gt;&gt;
+&lt;p&gt;Today, your blackout deadline is 3:20 p.m&lt;/p&gt;
+
+&lt;p&gt;Right after lunch, some household members walked or biked to the local shop, Greenep’s Tobacco and Sweet Shop.&lt;/p&gt;
+
+&lt;p&gt;Greenep’s is the place for essentials like tobacco, maybe one of today’s newspapers from the Manchester Evening News, and the neighbourhood scoops.&lt;/p&gt;
 
 &lt;&lt;next 3s&gt;&gt;
 &lt;p&gt;Now they have returned with whatever additional facts, anecdotes, and even rumours they have heard at the shop.&lt;/p&gt;
@@ -4716,26 +4836,53 @@ Select your household.
 [[Household 4: The Sklars|Sklars3]]
 [[Household 5: The Baileys|Baileys3]]
 
-[[Community Members|Community3]]</tw-passagedata><tw-passagedata pid="13" name="FinalDecisions" tags="" position="350,225" size="100,100">&lt;&lt;nobr&gt;&gt;
-&lt;h1 class=&quot;fade-text&quot;&gt;Round 4&lt;/h1&gt;
-&lt;p class=&quot;fade-text&quot;&gt;Each household has gathered (and mapped) all the information it can gather about last night’s air raid.&lt;/p&gt;
+[[Community Members|Community3]]
 
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;p&gt;Now it is time to do a final evaluation and decide on the household plan in the event of another air raid this evening: does everyone stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?&lt;/p&gt;
-
-&lt;&lt;next 3s&gt;&gt;
-&lt;img class=&quot;divider&quot; src=&quot;./assets/images/div-05.svg&quot;/&gt;
-
-&lt;p&gt;Look at your Warden’s Report Form/War Report Form:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Which information do you believe is authoritative and current?&lt;/li&gt;
-    &lt;li&gt;Which information is the most biased and which is the least?&lt;/li&gt;
-    &lt;li&gt;Which information should you all use to make your final decision?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Once you’ve done your final household evaluation, make your final decision. Be prepared to [[share your decision with the other households.|FinalCredits]]&lt;/p&gt;
-&lt;&lt;/timed&gt;&gt;
+&lt;div class=&quot;household-page&quot;&gt;
+  &lt;img style=&quot;width:450px;&quot; src=&quot;./assets/images/scones.svg&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="FinalDecisions" tags="" position="350,225" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;div class=&quot;fade-text&quot; id=&quot;panel2&quot;&gt;
+    &lt;div class=&quot;fade-text notepad-container&quot;&gt;
+        &lt;div class=&quot;notepad&quot;&gt;
+            &lt;div class=&quot;top&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;justify-content:end;height:100%;&quot;&gt;
+                    &lt;img class=&quot;megaphone-backlight&quot; src=&quot;./assets/images/megaphone.svg&quot; onclick=&quot;document.getElementById(&#39;recording4&#39;).play();&quot;/&gt;
+                    &lt;audio id=&quot;recording4&quot; src=&quot;./assets/audio/r4p5.mp3&quot;&gt;&lt;/audio&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;paper-container&quot;&gt;
+                &lt;div class=&quot;paper&quot;&gt;
+                    Good afternoon.&lt;br&gt;
+                    &lt;br&gt;
+                    This is the final report from Radio MAB.&lt;br&gt;
+                    &lt;br&gt;
+                    Nightfall is upon us and you must decide where you will take shelter if the German air force attacks Manchester this evening.&lt;br&gt;
+                    &lt;br&gt;
+                    Do you stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?&lt;br&gt;
+                    You have gathered all the information you can and hope you have found out the truth about last night’s air raid.&lt;br&gt;
+                    You have listened to your household and community members, people who you think have authority, knowledge, and expertise.&lt;br&gt;
+                    &lt;br&gt;
+                    Some of this information is accurate.&lt;br&gt;
+                    Some of this information you believe.&lt;br&gt;
+                    And some information you do not necessarily accept, maybe because you suspect it is misinformation or even disinformation.&lt;br&gt;
+                    &lt;br&gt;
+                    As always, you must look within and confront your own biases.&lt;br&gt;
+                    Do not accept information that just confirms your own beliefs.&lt;br&gt;
+                    &lt;br&gt;
+                    Rethink: how do you know what you believe?&lt;br&gt;
+                    &lt;br&gt;
+                    Revise your point of view if your understanding of the threats has changed.&lt;br&gt;
+                    &lt;br&gt;
+                    The stakes are high: you must decide together and carry on.&lt;br&gt;
+                    &lt;br&gt;
+                    Good night and good luck.&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;p class=&quot;paper-end&quot; style=&quot;text-align:center;&quot;&gt;[[Radio MAB signing off.|FinalCredits]]&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="FinalCredits" tags="" position="475,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;game-theme&quot; volume 0 fadeoverto 7 0.75&gt;&gt;
 
@@ -4779,34 +4926,47 @@ Select your household.
 
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Sklars3" tags="" position="850,225" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;shop-bell&quot; volume 0.55 play&gt;&gt;
+&lt;p id=&quot;panel1&quot; class=&quot;fade-text&quot; style=&quot;font-size:1.5em;text-align:center;padding-top:75px;padding-bottom:45px;&quot;&gt;&lt;b&gt;Moderators, household and community members:&lt;/b&gt; read your instructions in the gamer handbook carefully. Listen to more reporting from Radio MAB. Your scones are getting cold.&lt;/p&gt;
 
-&lt;p class=&quot;fade-text&quot;&gt;Reeta Sklar: You are the moderator for your household. Open your household locker in Brightspace so that you can guide the household in its discussion of the information you have now.&lt;/p&gt;
-
-&lt;p class=&quot;fade-text&quot;&gt;Household members: together, you need to use the criteria of authority, currency, truthfulness, and bias to evaluate the facts and information that you have, along with any anecdotes, rumours, and propaganda that you might now have gathered. Consider: &lt;/p&gt;
-
-&lt;&lt;timed 3s t8n&gt;&gt;
-&lt;ul&gt;
-    &lt;li&gt;Timelines: can you create a chronology of events or not and compare it to the chronology of other raids?&lt;/li&gt;
-    &lt;li&gt;Is there any information that you think you need to discard? Why?&lt;/li&gt;
-    &lt;li&gt;How can you use the interactive map to visualize this information to better see and understand what is happening?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;&lt;next 2s&gt;&gt;
-&lt;p&gt;Look at your Warden’s Report Form/War Report Form:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Which information do you believe is authoritative and current? &lt;/li&gt;
-    &lt;li&gt;Which information is the ost biased and which is the least?&lt;/li&gt;
-    &lt;li&gt;Which information should you use to make your final decision?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you have done your final evaluation, make your final decision.&lt;/p&gt;
-
-&lt;&lt;next 3s&gt;&gt;
-&lt;p&gt;The game master will signal the end of Round 3. Now go and [[share this evaluation with the other households.|FinalDecisions]]&lt;/p&gt;
-
-
-&lt;&lt;/timed&gt;&gt;
+&lt;div id=&quot;link1&quot; style=&quot;display:flex;height:100vh;justify-content:center;align-self:flex-end;&quot; onclick=&quot;$(&#39;#panel1&#39;).toggle(); $(&#39;#link1&#39;).toggle(); $(&#39;#panel2&#39;).toggle();&quot;&gt;
+    &lt;img class=&quot;tower-backlight&quot; src=&quot;./assets/images/manchester-radio-tower.svg&quot;/&gt;
+&lt;/div&gt;
+&lt;div class=&quot;fade-text&quot; id=&quot;panel2&quot; style=&quot;display: none;&quot;&gt;
+    &lt;div class=&quot;fade-text notepad-container&quot;&gt;
+        &lt;div class=&quot;notepad&quot;&gt;
+            &lt;div class=&quot;top&quot;&gt;
+                &lt;div style=&quot;display:flex;align-items:center;justify-content:end;height:100%;&quot;&gt;
+                    &lt;img class=&quot;megaphone-backlight&quot; src=&quot;./assets/images/megaphone.svg&quot; onclick=&quot;document.getElementById(&#39;recording4&#39;).play();&quot;/&gt;
+                    &lt;audio id=&quot;recording4&quot; src=&quot;./assets/audio/r3p4.mp3&quot;&gt;&lt;/audio&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;paper-container&quot;&gt;
+                &lt;div class=&quot;paper&quot;&gt;
+                    This is Radio MAB, bringing you the latest &quot;Do we take shelter?&quot; bulletin.&lt;br&gt;
+                    &lt;br&gt;
+                    You have 20 minutes left to assess and decide where you will stay tonight.&lt;br&gt;
+                    &lt;br&gt;
+                    You must continue to answer these questions:&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Will there be another bombardment and, if so, when?&lt;br&gt;
+                    &amp;ensp;&amp;ensp;- Should you move back to the community shelter or stay in your own home another night?&lt;br&gt;
+                    &lt;br&gt;
+                    Information is still scarce but you are about to receive further news.&lt;br&gt;
+                    &lt;br&gt;
+                    Now household and community members pass on the neighbourhood scoops they heard at Greenep’s Tobacco and Sweet Shop.&lt;br&gt;
+                    Sometimes, folks share first-hand accounts, sometimes second-or third-hand accounts. &lt;br&gt;
+                    &lt;br&gt;
+                    But what is true and what is just gossip or rumour?&lt;br&gt;
+                    &lt;br&gt;
+                    The game master will signal the end of Round 3 and then you will share your evaluation with the other households.&lt;br&gt;
+                    &lt;br&gt;
+                    Drink you tea, be vigilante&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;p class=&quot;paper-end&quot; style=&quot;text-align:center;&quot;&gt;[[Filter out the rumours from the truth.|FinalDecisions]]&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;&lt;/nobr&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

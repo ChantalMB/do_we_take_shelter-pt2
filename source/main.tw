@@ -43,7 +43,7 @@ Do we take shelter?
 </div>
 
 <div class="fade-text opening-link hidden-link">
-[[Proceed to Greenep's Tobacco and Sweet Shop|Greenep]]
+[[Proceed to Manchester England, afternoon of December 23, 1940|Greenep]]
 </div>
 
 :: Greenep
@@ -110,9 +110,14 @@ Do we take shelter?
 <</timed>>
 
 <<timed 5s t8n>>
-<p>Sunset will be at 3:50 p.m. today and, as per Civil Defence regulations, everyone must comply with the regulations to mask their windows, skylights, and entrances to comply with blackout regulations 30 minutes before sunset: 3:20 p.m.</p>
+<p>Sunset will be at 3:50 p.m. today and, as per Civil Defence regulations, you must comply with the blackout regulations and mask your windows, skylights, and entrances 30 minutes before the sun goes down.</p>
 
-<p>Right after lunch, some household members went to the local shop, Greenep’s Tobacco and Sweet Shop, to buy what they need (basic supplies such as milk and tobacco) in case there is another raid tonight.  Plus, they want to confirm the information that they have and to gather any final information from their neighbours as well as air raid wardens or first aid workers who might also stop by.</p>
+<<next 2s>>
+<p>Today, your blackout deadline is 3:20 p.m</p>
+
+<p>Right after lunch, some household members walked or biked to the local shop, Greenep’s Tobacco and Sweet Shop.</p>
+
+<p>Greenep’s is the place for essentials like tobacco, maybe one of today’s newspapers from the Manchester Evening News, and the neighbourhood scoops.</p>
 
 <<next 3s>>
 <p>Now they have returned with whatever additional facts, anecdotes, and even rumours they have heard at the shop.</p>
@@ -137,27 +142,54 @@ Select your household.
 
 [[Community Members|Community3]]
 
+<div class="household-page">
+  <img style="width:450px;" src="./assets/images/scones.svg">
+</div>
+
 :: FinalDecisions
 <<nobr>>
-<h1 class="fade-text">Round 4</h1>
-<p class="fade-text">Each household has gathered (and mapped) all the information it can gather about last night’s air raid.</p>
-
-<<timed 3s t8n>>
-<p>Now it is time to do a final evaluation and decide on the household plan in the event of another air raid this evening: does everyone stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?</p>
-
-<<next 3s>>
-<img class="divider" src="./assets/images/div-05.svg"/>
-
-<p>Look at your Warden’s Report Form/War Report Form:</p>
-<ul>
-    <li>Which information do you believe is authoritative and current?</li>
-    <li>Which information is the most biased and which is the least?</li>
-    <li>Which information should you all use to make your final decision?</li>
-</ul>
-
-<<next 2s>>
-<p>Once you’ve done your final household evaluation, make your final decision. Be prepared to [[share your decision with the other households.|FinalCredits]]</p>
-<</timed>>
+<div class="fade-text" id="panel2">
+    <div class="fade-text notepad-container">
+        <div class="notepad">
+            <div class="top">
+                <div style="display:flex;align-items:center;justify-content:end;height:100%;">
+                    <img class="megaphone-backlight" src="./assets/images/megaphone.svg" onclick="document.getElementById('recording4').play();"/>
+                    <audio id="recording4" src="./assets/audio/r4p5.mp3"></audio>
+                </div>
+            </div>
+            <div class="paper-container">
+                <div class="paper">
+                    Good afternoon.<br>
+                    <br>
+                    This is the final report from Radio MAB.<br>
+                    <br>
+                    Nightfall is upon us and you must decide where you will take shelter if the German air force attacks Manchester this evening.<br>
+                    <br>
+                    Do you stay at home or go to the community air raid shelter in the Cheetham Hill Assembly Rooms on Cheetham Hill Rd?<br>
+                    You have gathered all the information you can and hope you have found out the truth about last night’s air raid.<br>
+                    You have listened to your household and community members, people who you think have authority, knowledge, and expertise.<br>
+                    <br>
+                    Some of this information is accurate.<br>
+                    Some of this information you believe.<br>
+                    And some information you do not necessarily accept, maybe because you suspect it is misinformation or even disinformation.<br>
+                    <br>
+                    As always, you must look within and confront your own biases.<br>
+                    Do not accept information that just confirms your own beliefs.<br>
+                    <br>
+                    Rethink: how do you know what you believe?<br>
+                    <br>
+                    Revise your point of view if your understanding of the threats has changed.<br>
+                    <br>
+                    The stakes are high: you must decide together and carry on.<br>
+                    <br>
+                    Good night and good luck.<br>
+                    <br>
+                    <p class="paper-end" style="text-align:center;">[[Radio MAB signing off.|FinalCredits]]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <</nobr>>
 
 :: FinalCredits
