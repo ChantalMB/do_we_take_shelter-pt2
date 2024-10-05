@@ -4375,3 +4375,27 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+.plane-container {
+  position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+}
+
+.plane {
+  height: 25vh;
+  transform: translateX(-50vw) translateY(-50vh);
+  animation: diagonal-to-bottom-right 5s linear 0s ;
+}
+
+@keyframes diagonal-to-bottom-right {
+  from {
+    transform: translateX(-15vw) translateY(-15vh);
+  }
+
+  to {
+    transform: translateX(103vw) translateY(103vh);
+  }
+}

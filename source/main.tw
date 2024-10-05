@@ -3,7 +3,7 @@
     "ifid": "7BB31A4A-9E10-48D9-A1CD-448A7E567A59",
     "format": "SugarCube",
     "format-version": "2.36.1",
-    "start": "Start"
+    "start": "FinalDecisions"
 }
 
 :: StoryInit
@@ -21,6 +21,7 @@
 <<cacheaudio "streetcar-station" "./assets/audio/streetcar-station.mp3">>
 <<cacheaudio "pigeon-coo" "./assets/audio/pigeon-coo.mp3">>
 <<cacheaudio "westminster" "./assets/audio/westminster.mp3">>
+<<cacheaudio "air-raid" "./assets/audio/bbc-air-raid.mp3">>
 
 
 
@@ -184,12 +185,25 @@ Select your household.
                     <br>
                     Good night and good luck.<br>
                     <br>
-                    <p class="paper-end" style="text-align:center;">[[Radio MAB signing off.|FinalCredits]]</p>
+                    <p class="paper-end" style="text-align:center;">[[Radio MAB signing off.|AirDefence]]</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<</nobr>>
+
+:: AirDefence
+<<nobr>>
+<<audio "air-raid" volume 1 play>>
+<div class="plane-container">
+  <img class="plane" src="./assets/images/plane.svg">
+</div>
+<<timed 5s t8n>>
+  <div style="position: fixed;inset: 0;width: fit-content;height: fit-content;margin: auto;">
+    <p>[[Who will survive?|FinalCredits]]</p>
+  </div>
+<</timed>>
 <</nobr>>
 
 :: FinalCredits
