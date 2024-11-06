@@ -79,8 +79,8 @@
 	<</repeat>>
 <</silently>>
 
-/* <<timed 1500s>>
-    <<audio "westminster" play>>
+<<timed 1500s>>
+    /* <<audio "westminster" play>> */
     <p class="fade-text" style="display:flex;justify-content:center;font-size:1.5em;">[[Proceed|FinalDecisions]]</p>
-<</timed>> */
+<</timed>>
 <</nobr>>
